@@ -1,0 +1,21 @@
+dockerspring:
+   data:
+      mongodb:
+         uri: mongodb://mongo:27000/springwithmongo
+spring:
+   devtools:
+      remote:
+         secret: misupersecretomasmsecreto
+   autoconfigure:
+      exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+   application:
+      name: SpringWithMongo
+   data:
+      mongodb:
+         uri: mongodb://localhost/springwithmongo
+server:
+   port: 8081
+org:
+   owasp:
+      esapi:
+         resources: /home/forrequia/.esapi/ 
